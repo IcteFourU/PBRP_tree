@@ -1,17 +1,44 @@
 # Start Daemon (Registry directories should already be present)
 service mobicore /system/bin/mcDriverDaemon --P1 /mnt/vendor/persist/mcRegistry \
-	-r /vendor/app/mcRegistry/04320000000000000000000000000000.tlbin
-	-r /vendor/app/mcRegistry/031c0000000000000000000000000000.drbin
-	-r /vendor/app/mcRegistry/031c0000000000000000000000000000.drbin
-	-r /vendor/app/mcRegistry/05060000000000000000000000000000.tabin
-	-r /vendor/app/mcRegistry/05070000000000000000000000000000.drbin
-	-r /vendor/app/mcRegistry/070f0000000000000000000000000a0a.tlbin
-	-r /vendor/app/mcRegistry/08010203000000000000000000000000.tabin
-	-r /vendor/app/mcRegistry/09060000000000000000000000000000.tabin
-	-r /vendor/app/mcRegistry/09070000000000000000000000000000.drbin
-	-r /vendor/app/mcRegistry/09080000000000000000000000000000.tlbin
-	-r /vendor/app/mcRegistry/6b3f5fa0f8cf55a7be2582587d62d63a.drbin
-	-r /vendor/app/mcRegistry/b230723bcfe75f8581122dc1f8e52f4d.tabin 
+	-r /odm/vendor/app/mcRegistry/04320000000000000000000000000000.tlbin
+	-r /odm/vendor/app/mcRegistry/031c0000000000000000000000000000.drbin
+	-r /odm/vendor/app/mcRegistry/031c0000000000000000000000000000.drbin
+	-r /odm/vendor/app/mcRegistry/05060000000000000000000000000000.tabin
+	-r /odm/vendor/app/mcRegistry/05070000000000000000000000000000.drbin
+	-r /odm/vendor/app/mcRegistry/070f0000000000000000000000000a0a.tlbin
+	-r /odm/vendor/app/mcRegistry/08010203000000000000000000000000.tabin
+	-r /odm/vendor/app/mcRegistry/09060000000000000000000000000000.tabin
+	-r /odm/vendor/app/mcRegistry/09070000000000000000000000000000.drbin
+	-r /odm/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin
+	-r /odm/vendor/app/mcRegistry/6b3f5fa0f8cf55a7be2582587d62d63a.drbin
+	-r /odm/vendor/app/mcRegistry/b230723bcfe75f8581122dc1f8e52f4d.tabin
+	-r /vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
+	-r /vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
+	-r /vendor/app/mcRegistry/05120000000000000000000000000000.drbin
+	-r /vendor/app/mcRegistry/05120000000000000000000000000000.tlbin
+	-r /vendor/app/mcRegistry/05120000000000000000000000000001.tlbin
+	-r /vendor/app/mcRegistry/06090000000000000000000000000000.drbin
+	-r /vendor/app/mcRegistry/06090000000000000000000000000000.drbin
+	-r /vendor/app/mcRegistry/06090000000000000000000000000000.tlbin
+	-r /vendor/app/mcRegistry/0706000000000000000000000000004d.tlbin
+	-r /vendor/app/mcRegistry/07061000000000000000000000000000.tlbin
+	-r /vendor/app/mcRegistry/07150000000000000000000000000000.drbin
+	-r /vendor/app/mcRegistry/07150000000000000000000000000000.tlbin
+	-r /vendor/app/mcRegistry/07170000000000000000000000000000.drbin
+	-r /vendor/app/mcRegistry/07170000000000000000000000000000.tlbin
+	-r /vendor/app/mcRegistry/08040000000000000000000000003419.tabin
+	-r /vendor/app/mcRegistry/08050000000000000000000000003419.drbin
+	-r /vendor/app/mcRegistry/08050000000000000000000000003419.tlbin
+	-r /vendor/app/mcRegistry/08110000000000000000000000000000.tabin
+	-r /vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.drbin
+	-r /vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.tlbin
+	-r /vendor/app/mcRegistry/5020170115e016302017012521300000.drbin
+	-r /vendor/app/mcRegistry/5020170115e016302017012521300000.tlbin
+	-r /vendor/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.drbin
+	-r /vendor/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.tlbin
+	-r /vendor/app/mcRegistry/98fb95bcb4bf42d26473eae48690d7ea.tabin
+	-r /vendor/app/mcRegistry/abcd270ea5c44c58bcd3384a2fa2539e.tabin
+	-r /vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin
     user root
     group root
     disabled
