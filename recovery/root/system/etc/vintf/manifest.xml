@@ -1,11 +1,10 @@
 <!--
     Input:
         manifest.xml
-        manifest_oplus_commondcs.xml
-        manifest_oplus_orms.xml
+        oplus_device_framework_manifest.xml
 -->
-<manifest version="2.0" type="framework">
-    <hal format="hidl">
+<manifest version="5.0" type="framework">
+    <hal format="hidl" max-level="6">
         <name>android.frameworks.displayservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -15,7 +14,7 @@
         </interface>
         <fqname>@1.0::IDisplayService/default</fqname>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" max-level="5">
         <name>android.frameworks.schedulerservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -109,15 +108,15 @@
         </interface>
         <fqname>@1.0::IOrmsHalProxy/ORMS_HAL_PROXY</fqname>
     </hal>
-     <hal format="hidl">
-        <name>vendor.mediatek.hardware.keymaster_attestation</name>
+    <hal format="hidl">
+        <name>vendor.oplus.hardware.osense.client</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
-            <name>IKeymasterDevice</name>
-            <instance>default</instance>
+            <name>IOsenseHalReporter</name>
+            <instance>OsenseHalReporter</instance>
         </interface>
-        <fqname>@1.1::IKeymasterDevice/default</fqname>
+        <fqname>@1.0::IOsenseHalReporter/OsenseHalReporter</fqname>
     </hal>
         <hal format="hidl">
         <name>android.hardware.keymaster</name>
@@ -128,10 +127,13 @@
             <instance>default</instance>
         </interface>
         <fqname>@4.1::IKeymasterDevice/default</fqname>
-    </hal>
+    </hal>    
     <system-sdk>
         <version>28</version>
         <version>29</version>
         <version>30</version>
+        <version>31</version>
+        <version>32</version>
+        <version>33</version>
     </system-sdk>
 </manifest>

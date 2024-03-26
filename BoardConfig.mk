@@ -128,11 +128,12 @@ TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_SECONDARY_BRIGHTNESS_PATH := /sys/devices/platform/disp_leds/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
-TW_SCREEN_BLANK_ON_BOOT := true
+#TW_SCREEN_BLANK_ON_BOOT := true
 TARGET_USES_MKE2FS := true
 TW_EXCLUDE_APEX := true
 TW_NO_HAPTICS := true
 TW_Y_OFFSET := 115
 TW_H_OFFSET := -115
+TW_LOAD_VENDOR_MODULES := true
 
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
