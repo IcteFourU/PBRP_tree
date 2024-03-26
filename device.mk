@@ -32,10 +32,10 @@ PRODUCT_PACKAGES += \
     android.system.keystore2 \
 
 #keymaster    
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster-V3-ndk_platform.vendor \
-    android.hardware.keymaster@3.0.vendor \
-    android.hardware.keymaster@4.1.vendor \
+#PRODUCT_PACKAGES += \
+#    android.hardware.keymaster-V3-ndk_platform.vendor \
+#    android.hardware.keymaster@3.0.vendor \
+#    android.hardware.keymaster@4.1.vendor \
 
 # Additional binaries & libraries needed for recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
