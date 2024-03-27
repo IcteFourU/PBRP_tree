@@ -135,5 +135,6 @@ TW_NO_HAPTICS := true
 TW_Y_OFFSET := 115
 TW_H_OFFSET := -115
 TW_LOAD_VENDOR_MODULES := true
+PRODUCT_ENFORCE_VINTF_MANIFEST := true
 
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
