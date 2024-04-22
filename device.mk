@@ -14,13 +14,12 @@
 # limitations under the License.
 #
 
-# Enable updating of APEXes
+# Dynamic
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Fastbootd
@@ -39,7 +38,9 @@ PRODUCT_PACKAGES += \
 
 # Additional binaries & libraries needed for recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
+    libresetprop
     libkeymaster4
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
-	$(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libresetprop.so \

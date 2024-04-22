@@ -3,8 +3,8 @@
         manifest.xml
         oplus_device_framework_manifest.xml
 -->
-<manifest version="5.0" type="framework">
-    <hal format="hidl" max-level="6">
+<manifest version="4.0" type="framework">
+    <hal format="hidl">
         <name>android.frameworks.displayservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -118,16 +118,6 @@
         </interface>
         <fqname>@1.0::IOsenseHalReporter/OsenseHalReporter</fqname>
     </hal>
-        <hal format="hidl">
-        <name>android.hardware.keymaster</name>
-        <transport>hwbinder</transport>
-        <version>4.1</version>
-        <interface>
-            <name>IKeymasterDevice</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@4.1::IKeymasterDevice/default</fqname>
-    </hal>    
     <system-sdk>
         <version>28</version>
         <version>29</version>
