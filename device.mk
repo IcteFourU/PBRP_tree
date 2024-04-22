@@ -38,8 +38,8 @@ PRODUCT_PACKAGES += \
 
 # Additional binaries & libraries needed for recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
-    libresetprop
-    libkeymaster4
+    libresetprop \
+    libkeymaster4 \
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
